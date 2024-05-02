@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const userLocaleStorage = (key, defaultValue) => {
+export const UserLocaleStorage = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
     let currentValue;
     try {

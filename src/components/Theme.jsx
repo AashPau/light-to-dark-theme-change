@@ -1,8 +1,8 @@
-import { userLocaleStorage } from "./userLocaleStorage";
+import { UserLocaleStorage } from "./UserLocaleStorage";
 import "./Theme.css";
 
 export const Theme = () => {
-  const [theme, setTheme] = userLocaleStorage("theme", "dark");
+  const [theme, setTheme] = UserLocaleStorage("theme", "dark");
 
   const handleToggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
